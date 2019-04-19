@@ -32,8 +32,7 @@
     height: 540px;
 
     border-radius: 21px;
-    -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+
   }
   
   .product-device::before {
