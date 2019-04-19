@@ -1,79 +1,106 @@
 .container {
-    max-width: 960px;
-  }
-  
-  .bg-light{
-    background-color: #FADEC5!important;
-    border:1px;
-  }
+  max-width: 960px;
+}
+body{
+  font-family: 'Libre Baskerville', serif;
+}
 
-  /*
-   * Custom translucent site header
-   */
-  
-  .site-header {
+#icon{
+  position: absolute;
+  left: 2%;
 
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
-    backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
-    color: #999;
-    transition: ease-in-out color .15s;
-  }
-  .site-header a:hover {
-    color: #fff;
-    text-decoration: none;
-  }
+}
+
+
+#Backdrop {
   
-  /*
+  background-image: url("../images/SanDiego_White.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 900px;
+}
+
+.bg-light {
+
+
+}
+
+
+
+
+.site-header {
+  background-color: rgb(57, 87, 219);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+  color:white;
+  transition: ease-in-out color .15s;
+}
+
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
    * Dummy devices (replace them with your own or something else entirely!)
    */
-  
-  .product-device {
-    position: absolute;
-    right: 10%;
-    bottom: -10%;
-    width: 300px;
-    height: 540px;
 
-    border-radius: 21px;
+.product-device {
+  position: relative;
 
-  }
-  
-  .product-device::before {
-    position: absolute;
-    top: 10%;
-    right: 10px;
-    bottom: 10%;
-    left: 10px;
-    content: "";
- 
-    border-radius: 5px;
-  }
-  
-  .product-device-2 {
-    top: -25%;
-    right: auto;
-    bottom: 0;
-    left: 5%;
-    background-color: #e5e5e5;
-  }
-  
-  
-  /*
+  width: auto;
+  height:300px;
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
    * Extra utilities
    */
-  
-  .flex-equal > * {
+
+.flex-equal>* {
+  -ms-flex: 1;
+  flex: 1;
+}
+
+
+
+@media (min-width: 768px) {
+  .flex-md-equal>* {
     -ms-flex: 1;
     flex: 1;
   }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      -ms-flex: 1;
-      flex: 1;
-    }
+
+}
+@media(max-width: 770px){
+  #icon{
+    visibility: hidden;
   }
-  
-  .overflow-hidden { overflow: hidden; }
-  
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

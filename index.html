@@ -5,14 +5,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v3.8.5">
   <title>San Diego Concentr8</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/product/">
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
   <style>
@@ -32,59 +32,74 @@
     }
   </style>
   <!-- Custom styles for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
   <link href="./assets/css/css.css" rel="stylesheet">
-  
+
 </head>
 
 <body>
-  <nav class="site-header sticky-top py-1">
-    <div class="container d-flex flex-column flex-md-row justify-content-between">
+   <nav class="site-header sticky-top py-1">
+      
+    <div class="container d-flex flex-column flex-md-row justify-content-between"></div>
+     
       <a class="py-2" href="#">
-        <img src='./assets/images/Yuki_logo_design_No_Background.png' width="60" height="auto">
+          
+        <img src='./assets/images/Yuki_logo_design_No_Background.png' width="80" height="auto">
+      
         <title>Product</title>
         <circle cx="12" cy="12" r="10" />
         <path
           d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
         </svg>
       </a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-    </div>
+      <a class="toptext py-2 d-none d-md-inline-block" id='ree' href="#">Home</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Products</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Contact Us</a>
+      <a class="py-2 d-none d-md-inline-block" href="#">Social Media</a>
   </nav>
 
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+
+  <div id="Backdrop" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <img id='icon' src='./assets/images/Yuki_logo_design_No_Background.png' width="300" height="auto">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <img src='./assets/images/Yuki_logo_design_No_Background.png' width="300" height="auto">
-      <h1 class="display-4 font-weight-normal">Welcome to San Diego Concentr8</h1>
-      <p class="lead font-weight-normal">At SDConcentr8s we strive to provide our customers with access to high quality
-        CBD oil and CBD goods. Shipping to both all 50 states and internationally, SDConcentr8s can be your one stop
-        shop to all CBD goods.</p>
-      <a class="btn btn-outline-secondary" href="#">Contact Us Today!</a>
+
+
+      <div class="display-4 font-weight-normal">
+        <h1>Welcome to</h1>
+        <h1></h1> San Diego Concentr8<br><br> </h1>
+      </div>
+      <p class="lead font-weight-normal" style="text-shadow: 1px 1px goldenrod; font-weight: bold;">At SDConcentr8s we strive to provide our customers with access to high quality
+        Hemp seeds and CBD goods. Shipping both internationally and all 50 States, SDConcentr8s can be your one stop
+        shop to all Hemp seeds and CBD goods.</p>
+      <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#ContactModal">Contact Us
+        Today!</button>
+
     </div>
-    <div class="product-device"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cannabis_leaf_2.svg">
-    </div>
+    <!--<div class="product-device"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cannabis_leaf_2.svg">-->
+  </div>
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">What is CBD</h2>
+
+        <h2 class="display-5">What is CBD?</h2>
         <p class="lead">Cannabidiol (CBD) is a naturally occurring compound found in the resinous flower of cannabis, a
           plant with a rich history as a medicine going back thousands of years.</p>
+
       </div>
-      <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+
+      <img class='product-device' src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cannabis_leaf_2.svg">
     </div>
     <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
       <div class="my-3 p-3">
         <h2 class="display-5">What is CBD Oil</h2>
-        <p class="lead">And an even wittier subheading.</p>
+        <p class="lead">Cannabidiol is a popular natural remedy used for many common ailments.
+
+          Better known as CBD, it is one of the 104 chemical compounds known as cannabinoids found in the cannabis or
+          marijuana plant, Cannabis sativa </p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <img class='product-device' src="./assets/images/Dropper.png">
     </div>
   </div>
 
@@ -93,32 +108,31 @@
       <div class="my-3 p-3">
         <h2 class="display-5">CBD Benefits</h2>
         <p class="lead">
-          <li><a>Can Relieve Pain</a></li>
-          <li><a>Relieve Anxiety and Depression</a></li>
-
+          <li>Can Relieve Pain</li>
+          <li>Relieve Anxiety</li>
+          <li>Relieve Depression</li>
         </p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <img class='product-device' src="./assets/images/Mental.png">
     </div>
-    <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
-        <h2 class="display-5">Another headline</h2>
-        <p class="lead">And an even wittier subheading.</p>
+
+        <h2 class="display-5">What is CBD</h2>
+        <p class="lead">Cannabidiol (CBD) is a naturally occurring compound found in the resinous flower of cannabis, a
+          plant with a rich history as a medicine going back thousands of years.</p>
       </div>
       <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
   </div>
-
   <footer class="container py-5">
     <div class="row">
       <div class="col-12 col-md">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
-          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img"
-          viewBox="0 0 24 24" focusable="false">
-          <title>Product</title>
-          <circle cx="12" cy="12" r="10" />
-          <path
-            d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
+        <img src='./assets/images/Yuki_logo_design_No_Background.png' width="300" height="auto">
+        <title>Product</title>
+        <circle cx="12" cy="12" r="10" />
+        <path
+          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
         </svg>
         <small class="d-block mb-3 text-muted">&copy; 2017-2019</small>
       </div>
@@ -177,7 +191,28 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script src="./assets/js/js.js"></script>
 
 </body>
+<!-- Modal -->
+<div class="modal fade" id="ContactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Send me a email
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 </html>
