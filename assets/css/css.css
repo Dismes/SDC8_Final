@@ -2,6 +2,11 @@
     max-width: 960px;
   }
   
+  .bg-light{
+    background-color: #FADEC5!important;
+    border:1px;
+  }
+
   /*
    * Custom translucent site header
    */
