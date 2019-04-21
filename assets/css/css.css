@@ -1,26 +1,30 @@
 .container {
   max-width: 960px;
 }
-body{
+
+body {
   font-family: 'Libre Baskerville', serif;
 }
 
-#icon{
+#icon {
   position: absolute;
   left: 2%;
 
 }
-#thirdrow{
-width: 80%;
-height: auto;
-margin: auto;
+
+#thirdrow {
+  width: 80%;
+  height: auto;
+  margin: auto;
 }
-.carousel-item{
+
+.carousel-item {
   width: 50%;
 }
+
 #Backdrop {
-  
-  background-image: url("../images/SanDiego_White.jpg");
+
+  background-image: url("../images/panorama-1537475.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,13 +32,23 @@ margin: auto;
   height: 55%;
 }
 
-.bg-light {
-
-
+.thirdrow{
+  margin-top: 10px;
 }
 
+span {
+  display: block;
+  width: 60%;
+  margin: auto;
 
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 
+  background-color: rgb(0,0,0,.8);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
 
 .site-header {
   background-color: rgb(57, 87, 219);
@@ -43,7 +57,7 @@ margin: auto;
 }
 
 .site-header a {
-  color:white;
+  color: white;
   transition: ease-in-out color .15s;
 }
 
@@ -60,7 +74,7 @@ margin: auto;
   position: relative;
 
   width: auto;
-  height:300px;
+  height: 300px;
 }
 
 .product-device::before {
@@ -101,8 +115,9 @@ margin: auto;
   }
 
 }
-@media(max-width: 770px){
-  #icon{
+
+@media(max-width: 770px) {
+  #icon {
     visibility: hidden;
   }
 }
