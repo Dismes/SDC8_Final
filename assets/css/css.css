@@ -48,6 +48,7 @@ span {
   color: white;
   text-align: center;
   font-size: 2em;
+ 
 }
 
 .site-header {
@@ -116,9 +117,16 @@ span {
 
 }
 
-@media(max-width: 770px) {
+@media(max-width: 900px) {
   #icon {
     visibility: hidden;
+  }
+
+}
+
+@media(max-width: 450px){
+  span{
+    width:100%;
   }
 }
 
