@@ -38,24 +38,17 @@
 </head>
 
 <body>
-   <nav class="site-header sticky-top py-1">
-      
+  <nav class="site-header sticky-top py-1 navbar-expand-lg ">
+
     <div class="container d-flex flex-column flex-md-row justify-content-between"></div>
-     
-      <a class="py-2" href="#">
-          
-        <img src='./assets/images/Yuki_logo_design_No_Background.png' width="80" height="auto">
-      
-        <title>Product</title>
-        <circle cx="12" cy="12" r="10" />
-        <path
-          d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94" />
-        </svg>
-      </a>
-      <a class="toptext py-2 d-none d-md-inline-block" id='ree' href="#">Home</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Products</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Contact Us</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Social Media</a>
+
+    <a class="py-2" href="#">
+      <img src='./assets/images/Yuki_logo_design_No_Background.png' width="80" height="auto">
+    </a>
+    <a class="toptext py-2 d-none d-md-inline-block" id='ree' href="#">Home</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Products</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Contact Us</a>
+    <a class="py-2 d-none d-md-inline-block" href="#">Social Media</a>
   </nav>
 
 
@@ -68,7 +61,8 @@
         <h1>Welcome to</h1>
         <h1></h1> San Diego Concentr8<br><br> </h1>
       </div>
-      <p class="lead font-weight-normal" style="text-shadow: 1px 1px goldenrod; font-weight: bold;">At SDConcentr8s we strive to provide our customers with access to high quality
+      <p class="lead font-weight-normal" style="text-shadow: 1px 1px goldenrod; font-weight: bold;">At SDConcentr8s we
+        strive to provide our customers with access to high quality
         Hemp seeds and CBD goods. Shipping both internationally and all 50 States, SDConcentr8s can be your one stop
         shop to all Hemp seeds and CBD goods.</p>
       <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#ContactModal">Contact Us
@@ -78,7 +72,33 @@
     <!--<div class="product-device"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Cannabis_leaf_2.svg">-->
   </div>
   </div>
-
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./assets/images/hemp-2258608.jpg" alt="First slide"  width="200">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./assets/images/marijuana-3678222.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./assets/images/Mental.png" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!--
   <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
@@ -125,6 +145,7 @@
       <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
     </div>
   </div>
+  -->
   <footer class="container py-5">
     <div class="row">
       <div class="col-12 col-md">
@@ -206,7 +227,7 @@
         </button>
       </div>
       <div class="modal-body">
-        Send me a email
+        Send me a email @ sdconcentr8@gmail.com
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
