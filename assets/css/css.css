@@ -10,8 +10,14 @@ body{
   left: 2%;
 
 }
-
-
+#thirdrow{
+width: 80%;
+height: auto;
+margin: auto;
+}
+.carousel-item{
+  width: 50%;
+}
 #Backdrop {
   
   background-image: url("../images/SanDiego_White.jpg");
@@ -19,7 +25,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 900px;
+  height: 55%;
 }
 
 .bg-light {
