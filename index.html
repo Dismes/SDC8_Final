@@ -14,11 +14,13 @@
   </script>
   <script type="text/javascript">
     window.onload = function () {
+      console.log('Omar sucks peepee')
       document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         //this.contact_number.value = Math.random() * 100000 | 0;
         console.log(this)
         emailjs.sendForm('gmail', 'template_vuo32lp0', this);
+        alert("You message has been sent to Mike!")
       });
     }
   </script>
@@ -254,7 +256,7 @@
     </div>
   </div>
 -->
-  <footer class="py-5" style="background-color: darkgrey; margin-top: 5px">
+  <footer class="py-5" style="background-color: darkgrey; margin-top: 5px;" >
     <div class="row">
       <div class="col-12 col-md">
         <img src='./assets/images/Yuki_logo_design_No_Background.png' width="300" height="auto">
@@ -275,6 +277,8 @@
         </ul>
       </div>
     </div>
+
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
