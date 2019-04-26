@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <title>San Diego Concentr8</title>
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_huTPvx9zmbzhh6rhSC8rI");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        //this.contact_number.value = Math.random() * 100000 | 0;
+        console.log(this)
+        emailjs.sendForm('gmail', 'template_vuo32lp0', this);
+      });
+    }
+  </script>
+
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -65,7 +82,7 @@
           Hemp seeds and CBD goods. Shipping both internationally and all 50 States, SDConcentr8 can be your one stop
           shop to both Hemp seeds and CBD goods.</p>
         <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#ContactModal">Contact Us
-          Today!</button>
+          below or Email me here!</button>
 
       </div>
     </span>
@@ -104,18 +121,15 @@
   </a>
   </div>
 -->
-<div>
-</div>
+  <div>
+  </div>
   <div class='text-center' style="margin-top: 5px">
     <h1 style='text-decoration: underline;'>Products</h1>
     <div class='row' id='thirdrow' style="margin-top: 5px">
-
-      <div class='col-md-4' >
-<h4 style='text-align: left;'>CBD Oil</h4>
+      <div class='col-md-4'>
+        <h4 style='text-align: left;'>CBD Oil</h4>
         <div class="text-center overflow-hidden" style="background-color: aliceblue;">
-
-          <img class='product-device'src="./assets/images/Dropper.png"  >
-
+          <img class='product-device' src="./assets/images/Dropper.png">
           <!--
          <div class="my-3 py-3">
 
@@ -123,22 +137,18 @@
             <p class="lead">Cannabidiol (CBD) is a naturally occurring compound found in the resinous flower of
               cannabis, a
               plant with a rich history as a medicine going back thousands of years.</p>
-
           </div>
           -->
         </div>
       </div>
       <div class='col-md-4'>
-          <h4 style='text-align: left;'>Hemp Seeds</h4>
+        <h4 style='text-align: left;'>Hemp Seeds</h4>
         <div class="bg-light text-center overflow-hidden">
           <img class='product-device' src='./assets/images/hemp-2258608.jpg' height='80%' style='width:100%'>
- 
-
           <!--
                 <div class="my-3 p-3">
           <h2 class="display-5">What is CBD Oil</h2>
             <p class="lead">Cannabidiol is a popular natural remedy used for many common ailments.
-
               Better known as CBD, it is one of the 104 chemical compounds known as cannabinoids found in the cannabis
               or
               marijuana plant, Cannabis sativa </p>
@@ -147,10 +157,9 @@
         </div>
       </div>
       <div class='col-md-4'>
-          <h4 style='text-align: left;'>CBD Goods</h4>
+        <h4 style='text-align: left;'>CBD Goods</h4>
         <div class=" text-center overflow-hidden">
-          <img class='product-device'  src="./assets/images/CBD_Molecule.PNG" height='80%'>
-
+          <img class='product-device' src="./assets/images/CBD_Molecule.PNG" height='80%'>
           <!--
                <div class="my-3 py-3">
 
@@ -158,15 +167,44 @@
             <p class="lead">Cannabidiol (CBD) is a naturally occurring compound found in the resinous flower of
               cannabis, a
               plant with a rich history as a medicine going back thousands of years.</p>
-
           </div>
           -->
         </div>
       </div>
-
     </div>
   </div>
+  <div class='row' id='thirdrow' style="margin-top: 5px">
+    <div class='col-md-4'>
 
+    </div>
+    <div class='col-md-4'>
+        <form id='contact-form'>
+            <div class='row'>
+              <h1>Contact me!</h1>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="LastName">name</label>
+                <input type="LastName" class="form-control" id="LastName" placeholder="Full Name" name='user_name'>
+              </div>
+              <div class="form-group">
+                <label for="Email">Email address</label>
+                <input type="email" class="form-control" id="Email" name='user_email' aria-describedby="emailHelp"
+                  placeholder="Enter email">
+              </div>
+              <label for="Message">Message</label>
+              <div class="form-group">
+                <textarea class="form-control" id="Message" name='message' aria-label="With textarea"></textarea>
+              </div><label for=""></label>
+              <div class="form-group">
+                <input type='submit' id='ContactButton' class="btn btn-primary">
+              </div>
+            </form>
+          </form>
+    </div>
+    
+  </div>
+  
   <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
     <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
       <div class="my-3 py-3">
@@ -216,7 +254,7 @@
     </div>
   </div>
 -->
-  <footer class="container py-5" style="background-color: darkgrey; margin-top: 5px">
+  <footer class="py-5" style="background-color: darkgrey; margin-top: 5px">
     <div class="row">
       <div class="col-12 col-md">
         <img src='./assets/images/Yuki_logo_design_No_Background.png' width="300" height="auto">
@@ -227,7 +265,6 @@
         </svg>
         <small class="d-block mb-3 text-muted">&copy; 2019</small>
       </div>
-
       <div class="col-6 col-md">
         <h5>Social Media!</h5>
         <ul class="list-unstyled text-small">
